@@ -63,31 +63,56 @@ Objective - The objective of most Snakes and Ladders games is to be the first pl
 
 ## 3.Inbuilt functions-
 •	glBegin               //Delimits the vertices of a primitive or a group of like primitives
+
 •	glEnd                //Delimits the vertices of a primitive or a group of like primitives
+
 •	glClear             //clears buffers to assigned values
+
 •	glClearColor    //specifies clear values for the background color
+
 •	glFlush            //forces execution of openGL function quickly at once
+
 •	glColor3f        //specifies RGB color values for primitives
+
 •	glVertex2f      //specifies co-ordinates (x,y) values for the vertex position
+
 •	glutDisplayFunc //specifies the function that is called whenever the contents of the window need to be redrawn
+
 •	glutPostRedisplay //marks the current window as needing to be redrawn. At  the next oppurtunity, the callback function registered by glutDisplayFunc() will be called.
+
 •	glutInitDisplayMode  //requests a display with the properties in arguments
+
 •	glutMainLoop  //enters the GLUT processing loop, never to return.
+
 •	glutCreateWindow  //creates new window for displaying the frame buffer contents
+
 •	glutInitWindowSize  //specifies the initial height and width, in pixels of the window on the screen
+
 •	glutInitWindowPosition //specifies the top-left corner of the window measured in pixels, from the top left corner of the screen
 
 ## User defined functions-
 •	void init(); //it is used to initialize the output window 
+
 •	void start_screen(); //it is used to display the start screen
+
 •	void print_text(int x,int y,char str[ ],float r,float g,float b); //used to display text
+
 •	void frontscreen(); //used to display front screen
+
 •	void load_screen(); // the Loading screen is displayed using this function
+
 •	void display(); //it is the function used to display the output which is called to display certain changes
+
 •	void locpt_conv(int loc); //converts the block no. into its corresponding bottom-left co-ordinates
+
 •	void disp_fig(); //displays player's coins
+
 •	void dice(); //used to display the no. of dots on dice based on random no. generated
+
 •	void throw_dice(); //used to generate no. and change the player position
+
 •	void menu(int id); //used for displaying right mouse button menu
+
 •	void mouse(int btn,int state,int x,int y); //its a mouse driven function which detects any mouse interaction
+
 •	void keys( unsigned char key, int x, int y ); //a keyboard driven function that detects keyboard    interaction
